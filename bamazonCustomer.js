@@ -29,4 +29,37 @@ function lookupTable() {
     });
 }
 
+function userPrompts(){
+    inquirer.prompt([
+        {
+          type: "input",
+          name: "userInput",
+          message: "Which location or landmark would you like to geocode?"
+        },
+        {
+            type: "input",
+            name: "userInput2",
+            message: "Which location or landmark would you like to geocode?"
+          },
+      // After the prompt, store the user's response in a variable called location.
+      ]).then(function(userResponse) {
+        if (userResponse === "Q"){
+            connection.end();
+        }
+        else {
+            //create a function with a multiple IF n ELSE
+            // we should check if how many of the chosen items are in the DB (SQL statement)
+            // if the user chosen quantity is > stock quantity then console.log ("insufficient quantity")
+            // if they ask too much call the function which inquires the user from the start on what they 
+            //want to choose from the list of items.
+            // else decrement the quantity in the DB, mySQL statement UPDATE to decrement the stock_quantity
+            //
+        }
+        // console.log(location.userInput);
+        // Then use the Google Geocoder to Geocode the address
+        geocoder.geocode(location.userInput, function(err, data) {
+          console.log(JSON.stringify(data, null, 2));
+        });
+      });
+}
 
