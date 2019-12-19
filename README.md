@@ -22,9 +22,9 @@ Chrome browser
 
 ## Screenshots of homework progress
 
-![Code progression Final](https://github.com/krishnaaddala/BAmazonCLIApp/blob/master/Images/Working%20code%202.png "Working code1")
+![Code progression Final](https://github.com/krishnaaddala/BAmazonCLIApp/blob/master/Images/Working_code_1.png "Working code1")
 
-![Code progression Final](https://github.com/krishnaaddala/liri-node-app/blob/master/Images/spotofyAPI-liri.png "Working Code2")
+![Code progression Final](https://github.com/krishnaaddala/BAmazonCLIApp/blob/master/Images/Working_code_2.png "Working Code2")
 
 
 ![Code progression Final](Final_image1.png "Final layout")
@@ -32,8 +32,7 @@ Chrome browser
 
 ## Gif walkthrough
 
-![Giphy 1](https://github.com/krishnaaddala/liri-node-app/blob/master/Images/Gify1-LIRI.gif)
-![Giphy 2](https://github.com/krishnaaddala/liri-node-app/blob/master/Images/Gify2-LIRI.gif)
+![Giphy](https://github.com/krishnaaddala/BAmazonCLIApp/blob/master/Images/FinalGify.gif)
 
 
 ## Code Snippets
