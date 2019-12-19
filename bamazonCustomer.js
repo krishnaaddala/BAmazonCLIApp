@@ -48,7 +48,7 @@ function checkInventory(item, quantity, inventory) {
                 // else decrement the quantity in the DB, mySQL statement UPDATE to decrement the stock_quantity
                 connection.query("UPDATE products SET stock_quantity = stock_quantity-? WHERE item_id = ?", [quantity, item], function (err, res) {
                     if (err) throw err;
-                    console.log("You have successfully made your purchase! " + product + "\n" + " & it costed you " + purchasePrice);
+                    console.log("You have successfully made your purchase! You got : " + product + "\n" + " & it costed you : " + purchasePrice);
                     lookupTable();
                 });
             }
@@ -87,7 +87,6 @@ function userPrompts(inventory) {
                     console.log("Checking inventory...")
                     checkInventory(userResponse1.item, userResponse2.quantity, inventory);
                 }
-
             });
         }
     })
