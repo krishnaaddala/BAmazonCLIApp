@@ -34,13 +34,19 @@ Chrome browser
 
 ## Code Snippets
 
-```require("dotenv").config();
-var Spotify = require("node-spotify-api");
-var axios = require("axios");
-var moment = require("moment");
-var fs = require("fs");
-var keys = require("./keys.js");
-var spotify = new Spotify(keys.spotify);
+```var connection = mysql.createConnection({
+    host: "localhost",
+
+    // Your port; if not 3306
+    port: ******,
+
+    // Your username
+    user: "root",
+
+    // Your password
+    password: "******",
+    database: "bamazonDB"
+});
   ```
 
   ```function bandsInTown(band) {
