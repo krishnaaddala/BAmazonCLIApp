@@ -27,9 +27,6 @@ Chrome browser
 ![Code progression Final](https://github.com/krishnaaddala/BAmazonCLIApp/blob/master/Images/Working_code_2.png "Working Code2")
 
 
-![Code progression Final](Final_image1.png "Final layout")
-
-
 ## Gif walkthrough
 
 ![Giphy](https://github.com/krishnaaddala/BAmazonCLIApp/blob/master/Images/FinalGify.gif)
