@@ -36,7 +36,7 @@ function checkInventory(item, quantity, inventory) {
         if (inventory[i].item_id == item) {
             // if the user chosen quantity is > stock quantity then console.log ("insufficient quantity")
             if (quantity > inventory[i].stock_quantity) {
-                console.log("Insufficient Quantity!");
+                console.log("\n"+" Insufficient Quantity!" +"\n"+"\n");
                 // if they ask too much call the function which inquires the user from the start on what they 
                 //want to choose from the list of items.
                 userPrompts(inventory);
@@ -47,7 +47,7 @@ function checkInventory(item, quantity, inventory) {
                 // else decrement the quantity in the DB, mySQL statement UPDATE to decrement the stock_quantity
                 connection.query("UPDATE products SET stock_quantity = stock_quantity-? WHERE item_id = ?", [quantity, item], function (err, res) {
                     if (err) throw err;
-                    console.log("You have successfully made your purchase! You got : " + product + "\n" + " & it costed you : $" + purchasePrice);
+                    console.log("\n"+"You have successfully made your purchase! You got : " + product + "\n" + " & it costed you : $" + purchasePrice);
                     lookupTable();
                 });
             }
@@ -66,7 +66,7 @@ function userPrompts(inventory) {
         }
     ).then(function (userResponse1) {
         if (userResponse1.item.toLowerCase() === "q") {
-            console.log("Thanks for visiting our store!");
+            console.log("\n"+ "Thanks for visiting our store!"+"\n"+"\n");
             connection.end();
         }
         else {
@@ -83,7 +83,7 @@ function userPrompts(inventory) {
                 }
                 else {
                     //create a function with a multiple IF n ELSE
-                    console.log("Checking inventory...")
+                    console.log("\n"+"Checking inventory..."+"\n"+"\n")
                     checkInventory(userResponse1.item, userResponse2.quantity, inventory);
                 }
             });
