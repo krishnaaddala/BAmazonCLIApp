@@ -22,7 +22,7 @@ Chrome browser
 
 ## Screenshots of homework progress
 
-![Code progression Final](https://github.com/krishnaaddala/liri-node-app/blob/master/Images/Concert-liri-img.png "Working code1")
+![Code progression Final](https://github.com/krishnaaddala/BAmazonCLIApp/blob/master/Images/Working%20code%202.png "Working code1")
 
 ![Code progression Final](https://github.com/krishnaaddala/liri-node-app/blob/master/Images/spotofyAPI-liri.png "Working Code2")
 
