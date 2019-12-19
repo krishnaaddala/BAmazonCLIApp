@@ -78,13 +78,14 @@ function userPrompts(inventory) {
                     message: "How many do you want to purchase? [Press Q to Quit]"
                 }
             ).then(function (userResponse2) {
-                if (userResponse.quantity.toLowerCase() === "q") {
+                if (userResponse2.quantity.toLowerCase() === "q") {
                     console.log("Thanks for visiting our store!");
                     connection.end();
                 }
                 else {
                     //create a function with a multiple IF n ELSE
-                    checkInventory(userResponse.item, userResponse.quantity, inventory);
+                    console.log("Checking inventory...")
+                    checkInventory(userResponse1.item, userResponse2.quantity, inventory);
                 }
 
             });
